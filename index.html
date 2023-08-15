@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <h2><span>Port</span>folio</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <div id="text-section">
+            <div class="name">
+              <p>
+                Hello 👋 I'm <span id="span1">Sukalyan Adhikary</span> From
+                <span id="span2">India</span>
+              </p>
+            </div>
+            <div class="animated-text">
+              <p>I'm a</p>
+              <section class="animation">
+                <div class="first"><div>Student</div></div>
+                <div class="second"><div>Web Developer</div></div>
+                <div class="third"><div>Frontened Developer</div></div>
+              </section>
+            </div>
+          </div>
+          <div id="image-section">
+            <img src="./images/header-image-removebg.png" alt="header-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------About Section---------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="row-column1">
+            <img src="./images/official_image-removebg-preview.png" alt="" />
+          </div>
+          <div class="row-column2">
+            <h1><span>About</span> Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic
+              facilis aut possimus doloremque sit tempora quasi et repellat
+              dolorum natus eveniet assumenda exercitationem consectetur,
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontened Developement</span> <br />
+                  Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Backend Developement</span> <br />
+                  Designing Web/App Backend portion
+                </li>
+                <li>
+                  <span>Full Stack Developement</span> <br />
+                  complete Web/App Design
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Industrial Training at IBM</span> <br />
+                  Learning Complete Full Stack and Fronted Web Developement
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Cirtification in Full Stack Developement</span> <br />
+                  IBM
+                </li>
+                <li>
+                  <span>BCA,Computer Application</span> <br />
+                  Kingston School of Management & Science <br />2021-2024
+                </li>
+                <li><span>Higher Secondary</span> <br />WBCHSE ,2021</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container con">
+        <h1>Services</h1>
+        <div class="card-section">
+          <div class="card"> <p>Frontened Developement</p></div>
+          <div class="card"><p>Backend  Developement</p> </div>
+          <div class="card"><p>Full Stack Developement</p> </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container con1">
+        <h1>Contacts</h1>
+        <div class="form-section">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+            </div>
+            
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">State</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
